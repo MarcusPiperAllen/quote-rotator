@@ -43,4 +43,32 @@ body {
   button:hover {
     background: #005fa3;
   }
+  #daily-quote {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #e4ecf7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  #quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  #daily-quote button {
+    padding: 10px 20px;
+    background-color: #1e2a38;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #daily-quote button:hover {
+    background-color: #ffca28;
+    color: #1e2a38;
+  }
   
