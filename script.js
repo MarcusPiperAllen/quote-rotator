@@ -13,21 +13,20 @@ function showQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   document.getElementById("quote").textContent = quotes[randomIndex];
 }
-quotes.forEach(function(quote, index) {
-  console.log(index + 1 + ". " + quote);
-});
-const hypedQuotes = quotes.map(function(q) {
-  return "🔥 " + q;
+
+quotes.forEach((quote, index) => {
+  console.log(`${index + 1}. ${quote}`);
 });
 
+const hypedQuotes = quotes.map(q => "🔥 " + q);
 console.log(hypedQuotes);
-const totalChars = quotes.reduce(function(total, q) {
-  return total + q.length;
-}, 0);
+
+const totalChars = quotes.reduce((total, q) => total + q.length, 0);
 
 console.log("Total characters in all quotes:", totalChars);
+
 // Replace the 3rd quote with a new one
 quotes.splice(2, 1, "Success is a system, not a moment. – Marcus Piper");
-const sortedQuotes = [...quotes].sort(); // copy first to avoid changing original
+const sortedQuotes = [...quotes].sort();
 
 console.log(sortedQuotes);
