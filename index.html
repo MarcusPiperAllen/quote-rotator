@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Daily Quote</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Daily Quote</title>
 </head>
 <body>
-    <div id="daily-quote">
-        <h1 id="quote"></h1>
-        <button onclick="showQuote()">Show New Quote</button>
-    </div>
-    <script src="script.js"></script>
+  <div id="daily-quote">
+    <h1 id="quote"></h1>
+    <button id="new-quote">Show New Quote</button>
+    <button id="save-quote">Save This Quote</button>
+  </div>
+
+  <h2>Saved Quotes</h2>
+  <ul id="saved-quotes"></ul>
+  <button id="reset-quotes">Reset Saved Quotes</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
